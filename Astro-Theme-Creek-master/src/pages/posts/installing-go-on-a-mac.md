@@ -1,98 +1,37 @@
 ---
-title: "Installing Go on a Mac"
+title: "Interfaz"
 pubDate: "2020-02-01"
 slug: "go-basics-1-installing-go-on-a-mac"
 description: "In this article, I am going to show you how to install & setup Go (Golang) on Mac and also setup/configure VS Code for writing Go (Golang) code."
-hero: "/images/Golang-Basics.png"
+hero: "/images/int.png"
 tags: ["go"]
 layout: "../../layouts/BlogPostLayout.astro"
 ---
 
-In this article, I am going to show you how to install & setup Go on Mac and also setup/configure VS Code for writing Go code.
+interfaz base para el despliegue del sitio web
 
-## Install
+## Acceder
 
-The easiest way to install go is via go's website [Golang.org](https://golang.org/dl). After going to this page, click on the link for 'Apple macOS' and run the installer.
+Puedes acceder de manera facil a la pagina web, encontratas una interfaz demasiado intuitiva y completa de manejar 
 
-If you have [Homebrew](https://brew.sh/) installed you can run the command `brew install golang`
 
-After you have installed, let's verify and test that everything is working.
+<img src="/images/barra.png" alt="menu">
 
-Run this command in your terminal:
+## intuitivo
 
-```bash
-go version
+Nos encontramos con una interfaz muy limpia, es bastante facil encontrar lo que buscar y realizar la accion que desees 
 
-# You should see an output similar to the following:
-# go version go1.13.7 darwin/amd64
-```
+<img src="/images/gap.png" alt="int">
 
-## Workspace Setup
+## Vista electrodomesticos
 
-Go has this concept of a 'workspace,' which is where all of your source code and 3rd party packages, binaries etc. are all stored. On a mac this location is under:
+Nos encontramos en el menu de los electrodomesticos, lo que vendrian siendo las neveras y lavadoras, cada producto de estos se encuntre en dos categorias, donde podran explorar diferentes marcas, tambien precios muy accesibles, una ficha tecnica detallada del producto que desees ver 
 
-```bash
-/Users/<your mac username>/go
+<img src="/images/vista1.png" alt="barra de navegacion">
 
-# mine is: /Users/rguss/go/src
-```
 
-This location is also known as your `GOPATH`. The location of this path and various other Go specific ENV Variables can be located with the command:
+## Vista tecnologia
 
-```bash
-go env
-```
+Podran visitar la seccion de tecnologia donde podran buscar portatiles, televisores de diferentes marcas. podras acceder a la ficha tecnica de cada uno dando click una informacion a ma detalle referente al producto, las tecnologias de las pantallas el procesador y el precio son algunas de las principales 
 
-You will also need to create 3 directories inside of your `$GOPATH` with the following:
-
-```bash
-mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin
-```
-
-## Hello World
-
-Let's create a simple hello world program and build it to make sure we have everything configured correctly.
-
-Inside of your `$GOPATH/src` directory create a directory called `hello` and then a file called `hello.go` inside of it.
-
-It should look like this `$GOPATH/src/hello/hello.go`
-
-Then paste the following into `hello.go`:
-
-```go
-package main
-
-import "fmt"
-
-func main() {
-	fmt.Printf("Hello, World!")
-}
-```
-
-Then build it with the go tool:
-
-```bash
-cd $HOME/go/src/hello
-go build
-```
-
-Then:
-
-```bash
-./hello
-
-# Output should be:
-# Hello, World!
-```
-
-If you see `Hello, World!` output to the console, you are all set!
-
-## VS Code
-
-The final step is to set up and configure [VS Code](https://code.visualstudio.com/) to write Go code. It is as simple as
-installing a single extension called [Go](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go). Once installed, you are all set and ready to start writing Go.
-
-## Additional Resources
-
-- [Golang.org](https://golang.org/)
-- [Go.dev](https://go.dev/)
+<img src="/images/acer.png" alt="barra de navegacion">

@@ -12,14 +12,14 @@ export async function getStaticPaths({ paginate }) {
 
 
   return paginate(sortedPosts, {
-    pageSize: 21
+    pageSize: 21  
   })
 }
 
 const { page } = Astro.props
-let pageTitle = 'Articles';
-let pageDescription = `page ${page.currentPage} of all articles`;
-let seoTitle = 'Articles | Creek';
+let pageTitle = 'SECCION';
+let pageDescription = ` pagina ${page.currentPage}  `;
+let seoTitle = 'Articles | MOVILCENTER';
 let seoDescription = '';
 ---
 
