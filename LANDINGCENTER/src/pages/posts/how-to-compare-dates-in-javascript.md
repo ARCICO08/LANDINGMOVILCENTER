@@ -1,14 +1,14 @@
 ---
-title: "How to compare dates in JavaScript"
+title: "Caracteristicas"
 pubDate: "2020-01-28"
 slug: "how-to-compare-dates-in-javascript"
 description: "How to compare dates in JavaScript natively using the Date Object, without using any third-party libraries."
-hero: "/images/javascript-logo-banner.jpg"
+hero: "/images/change.png"
 tags: ["javascript"]
 layout: "../../layouts/BlogPostLayout.astro"
 ---
 
-Working with dates in JavaScript can be tricky to say the least. Recently I needed to compare two dates with one another to see which was greater than, less than, etc.
+MOVILCENTER website
 
 In my particular use case, I was using a date-picker that was returning a string like `01/28/2020`. I needed to see if this date was `>=` to the current day.
 
