@@ -1,6 +1,6 @@
 ---
 title: "Caracteristicas"
-pubDate: "2020-01-28"
+pubDate: "2023"
 slug: "how-to-compare-dates-in-javascript"
 description: "How to compare dates in JavaScript natively using the Date Object, without using any third-party libraries."
 hero: "/images/change.png"
@@ -10,59 +10,29 @@ layout: "../../layouts/BlogPostLayout.astro"
 
 MOVILCENTER website
 
-In my particular use case, I was using a date-picker that was returning a string like `01/28/2020`. I needed to see if this date was `>=` to the current day.
+Esta pagina web cuenta con diferentes caracteristicas que la hacen muy buena para la venta online, logrando asi abarcar un gran publico debido a su buena interfaz y facil manejo 
 
-The first thing I needed to do was convert this string into a JavaScript Date Object.
 
-```js
-const date: new Date("01/28/2020");
-console.log(date);
-// Tue Jan 28 2020 00:00:00 GMT-0500 (Eastern Standard Time)
-```
+- Interfaz amigable para todo publico
 
-Then, compare this date with the current day:
+- Gestion rapida de productos
 
-```js
-const compareDate = new Date("01/28/2020");
-const today = new Date();
-console.log(compareDate >= today);
-// false
-```
+- Vendes lo que quieras
 
-The issue is that even though the dates are the same, the times are not.
+- Servicio de soporte
 
-```js
-const compareDate = new Date("01/28/2020");
-const today = new Date();
-console.log("compareDate: ", compareDate);
-console.log("today: ", today);
-// compareDate:  Tue Jan 28 2020 00:00:00 GMT-0500 (Eastern Standard Time)
-// today:  Tue Jan 28 2020 21:33:27 GMT-0500 (Eastern Standard Time)
-```
+- Redirecciona a whatsapp
 
-Notice how `compareDate` has all zero's for time. The difference in time is the reason why this comparison fails. To fix this, we need to create the current day without time. We do this by instantiating a new JS Date object by individually passing in the year, month and day.
+- Informacion detallada del producto
 
-```js
-const todayWithoutTime = new Date(
-  new Date().getFullYear(),
-  new Date().getMonth(),
-  new Date().getDate()
-);
-console.log("todayWithoutTime: ", todayWithoutTime);
-// todayWithoutTime:  Tue Jan 28 2020 00:00:00 GMT-0500 (Eastern Standard Time)
-```
+- Compra de manera rapida 
 
-So let's try our comparison again.
+- Formas de pago seguras
 
-```js
-const compareDate = new Date("01/28/2020");
-const todayWithoutTime = new Date(
-  new Date().getFullYear(),
-  new Date().getMonth(),
-  new Date().getDate()
-);
-console.log(compareDate >= todayWithoutTime);
-// true
-```
+- Opccion de sistecredito 
 
-That's it. Just remember that when comparing dates in JavaScript it is vital to factor in the time. 😎
+## ¿Porque elegirnos?
+
+nustro sitio web esta dedicado a la venta de productos tecnologicos en linea, contamos con todo lo nesesario para poder trabajar de manera virtual, tenemos todas las funciones nesesarias, los botones correctos que permiten el correcto desplazamiento por la web, asi como maneras de pago muy comodas comprando con un solo click
+
+
